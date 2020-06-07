@@ -1,0 +1,24 @@
+/**
+/ This file will contain css rules to apply to large landscape screens (desktops)
+*/
+
+@media (min-width: 1101px){
+    /*  CSS for desktops  */
+    .container{
+    }
+
+    .header{
+    }
+
+    .navBer{
+    }
+
+    .content{
+    }
+
+    .sideBar{
+    }
+
+    .footer{
+    }
+}

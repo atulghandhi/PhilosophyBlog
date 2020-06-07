@@ -1,0 +1,18 @@
+/**
+/ This file will contain css rules to apply to all screen sizes
+/ It will also act as the unifier, importing the other css files to bring together the full websites layout
+*/
+
+@import "phone.css";
+@import "tablet.css";
+@import "desktop.css";
+
+*{
+    margin: 0;
+    padding: 0;
+    /*border: red 0.5px solid;*/
+}
+
+body{
+    background: black;
+}

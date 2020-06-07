@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptSettings">
+    <option name="languageLevel" value="ES6" />
+  </component>
+  <component name="ProjectResources">
+    <resource url="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&amp;family=Source+Serif+Pro:wght@600&amp;family=Tinos:wght@700&amp;display=swap" location="$PROJECT_DIR$" />
+  </component>
+</project>

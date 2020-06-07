@@ -1,0 +1,23 @@
+/**
+/ This file will contain css rules to apply to medium sized portrait screens (tablets)
+*/
+@media (min-width: 481px) and (max-width: 1100px) {
+    /*  CSS for tablets  */
+    .container{
+    }
+
+    .header{
+    }
+
+    .navBer{
+    }
+
+    .content{
+    }
+
+    .sideBar{
+    }
+
+    .footer{
+    }
+}
