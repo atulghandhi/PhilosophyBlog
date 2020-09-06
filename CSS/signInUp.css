@@ -1,0 +1,26 @@
+/*sign in code*/
+
+.signInBackground{
+    display: flex;
+    justify-content: center;
+
+    height: 80vh;
+    /*border: solid 1px red;*/
+}
+
+.logInCard{
+    align-self: center;
+
+    display: flex;
+    align-items: center;
+    row-gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+    width: fit-content;
+    background: #fff;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 10px;
+}
+
+
