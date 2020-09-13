@@ -20,37 +20,20 @@ function showSuccess(field) {
 
 //Check if email is valid
 function validateEmail(email){
-    const REGEX = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    const REGEX = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return REGEX.test(String(email).toLowerCase());
+}
+
+//Validate input fields
+function validateInput(fieldsArray) {
+    for (const field of fieldsArray) {
+        console.log(field.value);
+    }
 }
 
 //Event listeners
 form.addEventListener('submit', function (e) {
     e.preventDefault();
 
-    if (username.value === '') {
-        showError(username, 'Username is required');
-    } else {
-        showSuccess(username);
-    }
-
-    if (email.value === '') {
-        showError(email, 'Email is required');
-    } else if (!validateEmail(email.value)){
-        showError(email, 'Email is invalid');
-    } else {
-        showSuccess(email);
-    }
-
-    if (password.value === '') {
-        showError(password, 'Password is required');
-    } else {
-        showSuccess(password);
-    }
-
-    if (password2.value === '') {
-        showError(password2, 'Password confirmation is required');
-    } else {
-        showSuccess(password2);
-    }
+    validateInput([username, email, password, password2]);
 });
