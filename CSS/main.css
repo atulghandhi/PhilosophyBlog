@@ -7,6 +7,10 @@
 @import "tablet.css";
 @import "desktop.css";
 
+:root {
+    --primary-color: #55d6aa;
+}
+
 *{
     margin: 0;
     padding: 0;
